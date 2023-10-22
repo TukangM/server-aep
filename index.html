@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting to a SayaAEP profile</title>
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
     <style>
         body {
             display: flex;
@@ -21,11 +22,11 @@
         }
 
         .ball {
-            width: 16px; /* Mengurangi ukuran animasi */
-            height: 16px; /* Mengurangi ukuran animasi */
-            border-radius: 8px; /* Mengurangi ukuran animasi */
-            margin: 0 5px; /* Mengurangi ukuran animasi */
-            animation: 1.5s bounce ease infinite; /* Mengurangi durasi animasi */
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            margin: 0 5px;
+            animation: 1.5s bounce ease infinite;
         }
 
         .blue {
@@ -49,7 +50,7 @@
 
         @keyframes bounce {
             50% {
-                transform: translateY(12.5px); /* Mengurangi jarak animasi */
+                transform: translateY(12.5px);
             }
         }
 
@@ -59,19 +60,37 @@
                 background-color: #000;
                 color: #fff;
             }
+            
+            .copyright {
+                color: #888;
+                background: none;
+            }
+        }
+
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+            font-family: 'Google Sans', sans-serif;
+            color: #888;
+            background: rgba(0, 0, 0, 0.7);
         }
     </style>
 </head>
 <body>
-    <div style="font-size: 20%; margin-bottom: 10px;">Redirecting to a SayaAEP profile</div>
+    <div style="font-size: 140%; margin-bottom: 12px;">Redirecting to a SayaAEP profile</div>
     <div class="wrapper">
         <div class="ball blue"></div>
         <div class="ball red"></div>
         <div class="ball yellow"></div>
         <div class="ball green"></div>
     </div>
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300&display=swap">
+    <div class="copyright">
+        Copyright SayaAEP - TukangM 2023 ©
+    </div>
 
     <script>
         // Redirect otomatis ke website Anda setelah beberapa detik

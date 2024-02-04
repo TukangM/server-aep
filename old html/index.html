@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to a SayaAEP profile</title>
+    <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Google Sans', sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .ball {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            margin: 0 5px;
+            animation: 1.5s bounce ease infinite;
+        }
+
+        .blue {
+            background-color: #4285F5;
+        }
+
+        .red {
+            background-color: #EA4436;
+            animation-delay: .25s;
+        }
+
+        .yellow {
+            background-color: #FBBD06;
+            animation-delay: .5s;
+        }
+
+        .green {
+            background-color: #34A952;
+            animation-delay: .75s;
+        }
+
+        @keyframes bounce {
+            50% {
+                transform: translateY(12.5px);
+            }
+        }
+
+        /* Dark Mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000;
+                color: #fff;
+            }
+            
+            .copyright {
+                color: #888;
+                background: none;
+            }
+        }
+
+        .copyright {
+            position: fixed;
+            bottom: 0;
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+            font-family: 'Google Sans', sans-serif;
+            color: #888;
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div style="font-size: 140%; margin-bottom: 12px;">Redirecting to a SayaAEP profile</div>
+    <div class="wrapper">
+        <div class="ball blue"></div>
+        <div class="ball red"></div>
+        <div class="ball yellow"></div>
+        <div class="ball green"></div>
+    </div>
+    <div class="copyright">
+        Copyright SayaAEP - TukangM 2023 ©
+    </div>
+
+    <script>
+        // Redirect otomatis ke website Anda setelah beberapa detik
+        setTimeout(function() {
+            window.location.href = "https://beacons.ai/tukangm";
+        }, 3000); // Redirect setelah 3 detik (3000 milidetik)
+    </script>
+</body>
+</html>
